@@ -1,0 +1,12 @@
+ID: POC-CAI-BRAD
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: CaiHandler
+   type: nodejs
+   path: CaiHandler
+   provides:
+    - name: CaiHandler_api
+      properties:
+         url: ${default-url}
